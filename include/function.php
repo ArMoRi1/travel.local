@@ -6,3 +6,11 @@ function get_menu (){
     $menus = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $menus;
 }
+function get_tours() {
+    global $conn;
+    $sql = "SELECT * FROM tours";
+    $result = mysqli_query($conn, $sql);
+    $tours = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $tours;
+}
+
