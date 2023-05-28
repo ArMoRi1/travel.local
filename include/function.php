@@ -13,4 +13,10 @@ function get_tours() {
     $tours = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $tours;
 }
-
+function get_tour_by_id ($tour_id) {
+    global $conn;
+    $sql = "SELECT * FROM tours WHERE id =" .$tour_id;
+    $result = mysqli_query($conn, $sql);
+    $tour = mysqli_fetch_assoc($result);
+    return $tour;
+}

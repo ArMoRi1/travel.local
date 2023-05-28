@@ -1,19 +1,6 @@
 <?php
-    include ("include/config.php");
-    include ("include/function.php");
+include ("header.php");
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <title>Travel on You</title>
-</head>
-<body>
 <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -50,14 +37,14 @@
                         <h5 class="card-title"><?= $tour['title'];?></h5>
                         <p class="card-text"><?= mb_substr($tour['content'],0,80) .
                             '...';?></p>
-                        <a href="#" class="btn btn-primary">Читати далі</a>
+                        <a href="post.php" class="btn btn-primary">Читати далі</a>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
     </div>
-
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><</script>
-</body>
-</html>
+
+<?php
+include ("footer.php");
+?>
