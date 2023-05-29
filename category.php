@@ -8,20 +8,20 @@ require_once ('header.php');
             $category_id = $_GET['category_id'];
             $tours = get_tours_by_category($category_id);
             ?>
- <hr>
+
  <?php foreach ($tours as $tour): ?>
+            <hr>
                 <div class="card mb-4">
-                    <img class="card-img-top img-fluid img-size" src="<?=
-                    $tour['image'] ?>" alt="Card image cap">
+                    <img class="card-img-top img-fluid img-size" src="<?=$tour['image'] ?>" alt="Card image cap">
                     <div class="card-body">
-                        <a href="post.php?post_id=<?=$tour['id']?>"> <h3
-                                class="card-title"><?=$tour['title'];?></h3></a>
-                        <p class="card-text"><?=mb_substr($tour['content'],0,400). '...'?></p>
-                        <a href="post.php?post_id=<?=$tour['id']?>" class="btn btn-primary">Детальніше &rarr;</a>
+                        <h3 class="card-title"><?= $tour['title'];?></h3>
+                        <p class="card-text"><?= mb_substr($tour['content'],0,150) .'...';?></p>
+                        <p class="card-text">Тип туру: <?= ($tour['category_name']);?></p>
+                        <p class="card-text">Країна: <?= ($tour['country']);?></p>
+                        <a href="post.php?tour_id=<?=$tour['id']?>" class="btn btn-primary">Детальніше &rarr;</a>
                     </div>
                     <div class="card-footer text-muted">
-                        Posted on <?=$tour['datatime']?> by
-                        <a href="#">Admin</a>
+                        Posted on <?=$tour['datatime']?> by Admin
                     </div>
 
  <?php endforeach;?>

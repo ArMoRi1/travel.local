@@ -13,7 +13,7 @@ $tour = get_tour_by_id($tour_id);
                 <div class="card-body">
                     <h5 class="card-title"><?=$tour['title']?></h5>
                     <p class="card-text"><?=$tour['content']?></p>
-                    <p class="card-text">Тип туру: <?= ($tour['category']);?></p>
+                    <p class="card-text">Тип туру: <?= ($tour['category_name']);?></p>
                     <p class="card-text">Країна: <?= ($tour['country']);?></p>
                     <a href="index.php" class="btn btn-primary">Назад</a>
                 </div>
