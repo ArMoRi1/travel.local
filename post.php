@@ -1,7 +1,7 @@
 <?php
 include_once "header.php";
 include_once "footer.php";
-$tour_id = 1;
+$tour_id = $_GET['tour_id'];
 if (!is_numeric($tour_id)) exit();
 $tour = get_tour_by_id($tour_id);
 ?>
@@ -13,6 +13,8 @@ $tour = get_tour_by_id($tour_id);
                 <div class="card-body">
                     <h5 class="card-title"><?=$tour['title']?></h5>
                     <p class="card-text"><?=$tour['content']?></p>
+                    <p class="card-text">Тип туру: <?= ($tour['category']);?></p>
+                    <p class="card-text">Країна: <?= ($tour['country']);?></p>
                     <a href="index.php" class="btn btn-primary">Назад</a>
                 </div>
             </div>
