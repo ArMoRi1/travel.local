@@ -41,8 +41,7 @@ include ("include/function.php");
                 <?php endforeach;?>
             </ul>
             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                <a href = "login/index.php" type="button" class="btn btn-outline-secondary">Увійти</a>
-                <a type="button" class="btn btn-secondary">Зареєструватись</a>
+                <a href = "login/index.php" type="button" class="btn btn-secondary">Увійти</a>
             </div>
         </div>
     </nav>
@@ -56,8 +55,7 @@ include ("include/function.php");
                 <?php endforeach;?>
             </ul>
             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                <a href = "login/index.php" type="button" class="btn btn-outline-secondary">Увійти</a>
-                <a type="button" class="btn btn-secondary">Зареєструватись</a>
+                <a href = "login/index.php" type="button" class="btn btn-light">Увійти</a>
             </div>
         </div>
     </div>
