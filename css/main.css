@@ -1,19 +1,15 @@
 @import url("zero.css");
-@media (min-width: 992px) {
-    .navbar-nav,
-    .collapse navbar-dark {
-        display: none;
-    }
-}
+
 .container{
+    margin: 15px 0 15px 0;
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card{
-    margin-bottom: 15px;
+    margin: 15px 0 15px 0;
     max-width:520px;
-
     flex-shrink: 1;
 }
+

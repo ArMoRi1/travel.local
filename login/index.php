@@ -16,9 +16,9 @@ include ("../include/function.php");
 </head>
 <body>
 <div class="container">
-    <div class="row">
         <div class="col-12">
             <div class="main-form">
+
                 <form class="login" action="check-login.php" method="post">
                     <h3>Вхід</h3>
                     <div class="form-group">
@@ -35,5 +35,4 @@ include ("../include/function.php");
                 </form>
             </div>
         </div>
-    </div>
 </div>

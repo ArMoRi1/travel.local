@@ -12,6 +12,14 @@ include ("include/function.php");
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <title>Travel on You</title>
+    <style>
+        @media (min-width: 992px) {
+            .navbar-dark,
+            .collapse.navbar-dark {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <header class="header">

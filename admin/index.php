@@ -28,15 +28,15 @@ if (!$conn) {
 </head>
 <body class="admin">
 <div class="container">
-    <div class="row">
+
         <div class="col-10">
             <h2>Адміністративна панель</h2>
         </div>
         <div class="col-2">
             <a href="logout.php" class="btn btn-dark">Вихід</a>
-        </div>
+
     </div>
-    <div class="row">
+
         <div class="col">
             <table class="table">
                 <thead class="thead-light">
@@ -64,7 +64,7 @@ if (!$conn) {
             </table>
             <a href="add-new.php" class="btn btn-success">Додати новину</a>
         </div>
-    </div>
+
 </div>
 </body>
 </html>
