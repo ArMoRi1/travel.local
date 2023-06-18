@@ -3,12 +3,9 @@ include ("header.php");
 ?>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-8">
-
             <?php $tours = get_tours() ?>
             <?php foreach ($tours as $tour): ?>
-                <hr>
+
                 <div class="card">
                     <img src="<?= $tour['image']; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -23,8 +20,6 @@ include ("header.php");
                     </div>
                 </div>
             <?php endforeach; ?>
-        </div>
-    </div>
 </div>
 
 <?php
