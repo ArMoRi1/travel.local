@@ -10,14 +10,14 @@ include ("../include/function.php");
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Вхід в адмін-панель</title>
     <link rel="stylesheet"
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-12">
             <div class="main-form">
                 <form class="login" action="check-login.php" method="post">
                     <h3>Вхід</h3>
