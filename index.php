@@ -13,7 +13,7 @@ include ("header.php");
                         <p class="card-text"><?= mb_substr($tour['content'],0,150) .'...';?></p>
                         <p class="card-text">Тип туру: <?= ($tour['category_name']);?></p>
                         <p class="card-text">Країна: <?= ($tour['country']);?></p>
-                        <a href="post.php?tour_id=<?=$tour['id']?>" class="btn btn-primary">Детальніше &rarr;</a>
+                        <a href="post.php?tour_id=<?=$tour['id']?>" class="button">Детальніше →</a>
                     </div>
                     <div class="card-footer text-muted">
                         Posted on <?=$tour['datatime']?> by Admin

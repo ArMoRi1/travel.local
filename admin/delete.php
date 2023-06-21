@@ -38,6 +38,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Підтвердження видалення</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/global.css">
+    <style>
+        body{
+            font-family: Verdana, Arial, Helvetica, Sans-Serif;
+            background-color: #f7d692;
+            font-family: Arial;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body class="admin">
 <div class="container">

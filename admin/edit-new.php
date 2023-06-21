@@ -24,6 +24,14 @@ if (!$conn) {
     <title>Редагування новини</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            font-family: Verdana, Arial, Helvetica, Sans-Serif;
+            background-color: #f7d692;
+            font-family: Arial;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 <div class="container">

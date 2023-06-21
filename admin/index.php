@@ -25,46 +25,51 @@ if (!$conn) {
     <title>Адмін-панель</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            font-family: Verdana, Arial, Helvetica, Sans-Serif;
+            background-color: #f7d692;
+            font-family: Arial;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body class="admin">
 <div class="container">
 
-        <div class="col-10">
+    <div class="col">
+
+        <div class="top-admin">
             <h2>Адміністративна панель</h2>
-        </div>
-        <div class="col-2">
             <a href="logout.php" class="btn btn-dark">Вихід</a>
-
-    </div>
-
-        <div class="col">
-            <table class="table">
-                <thead class="thead-light">
-                <tr>
-                    <th scope="col">№</th>
-                    <th scope="col">Назва новини</th>
-                    <th scope="col">Редагування</th>
-                    <th scope="col">Видалення</th>
-                </tr>
-                </thead>
-                <?php
-                $sql = "SELECT * FROM tours";
-                $result = mysqli_query($conn, $sql);
-                foreach ($result as $post):
-                    ?>
-                    <tbody>
-                    <tr>
-                        <th scope="row"><?=$post['id']?></th>
-                        <td><?=$post['title']?></td>
-                        <td><a href="edit-new.php?post_id=<?=$post['id']?>" class="btn btn-secondary">Редагувати</a></td>
-                        <td><a href="delete.php?post_id=<?=$post['id'];?>" class="btn btn-danger">Видалити</a></td>
-                    </tr>
-                    </tbody>
-                <?php endforeach;?>
-            </table>
-            <a href="add-new.php" class="btn btn-success">Додати новину</a>
         </div>
 
+        <table class="table">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">№</th>
+                <th scope="col">Назва новини</th>
+                <th scope="col">Редагування</th>
+                <th scope="col">Видалення</th>
+            </tr>
+            </thead>
+            <?php
+            $sql = "SELECT * FROM tours";
+            $result = mysqli_query($conn, $sql);
+            foreach ($result as $post):
+                ?>
+                <tbody>
+                <tr>
+                    <th scope="row"><?=$post['id']?></th>
+                    <td><?=$post['title']?></td>
+                    <td><a href="edit-new.php?post_id=<?=$post['id']?>" class="btn btn-secondary">Редагувати</a></td>
+                    <td><a href="delete.php?post_id=<?=$post['id'];?>" class="btn btn-danger">Видалити</a></td>
+                </tr>
+                </tbody>
+            <?php endforeach;?>
+        </table>
+        <a href="add-new.php" class="btn btn-success">Додати новину</a>
+    </div>
 </div>
 </body>
 </html>

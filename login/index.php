@@ -12,13 +12,19 @@ include ("../include/function.php");
     <link rel="stylesheet"
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-
+    <style>
+        body{
+            font-family: Verdana, Arial, Helvetica, Sans-Serif;
+            background-color: #f7d692;
+            font-family: Arial;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
-        <div class="col-12">
+        <div class="login-form col-12">
             <div class="main-form">
-
                 <form class="login" action="check-login.php" method="post">
                     <h3>Вхід</h3>
                     <div class="form-group">
@@ -33,6 +39,7 @@ include ("../include/function.php");
                     </div>
                     <button type="submit" class="btn btn-primary formbtn">Увійти</button>
                 </form>
+
             </div>
         </div>
 </div>

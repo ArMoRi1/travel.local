@@ -17,14 +17,23 @@ if ($_SESSION["login"] !== $login && $_SESSION["password"] !== $pass){
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <style>
+        body{
+            font-family: Verdana, Arial, Helvetica, Sans-Serif;
+            background-color: #f7d692;
+            font-family: Arial;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
         <div class="col-12">
-            <div class="col">
-                <h3>Додання нової новини</h3>
-            </div>
+
             <form action="./check-new.php" method="post" enctype="multipart/form-data">
+                <div class="col">
+                    <h3>Додання нової новини</h3>
+                </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Вкажіть назву туру</label>
                     <input name="title" type="text" class="form-control"
